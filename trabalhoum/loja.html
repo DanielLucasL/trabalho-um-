@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link href="assets/css/bootstrap.css" rel="stylesheet">
+   <link href="assets/css/all.css" rel="stylesheet">
+   <link href="assets/css/styles.css" rel="stylesheet">
+   <title>Bootstrap</title>
+</head>
+
+<body>
+   <nav aria-label="navegacao">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Loja</li>
+      </ol>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Bem vindo(a), nossa loja.</h1>
+        <p class="lead">As suas compras contribuiem para manter a página funcionando.</p>
+      </div>
+    </div>
+    <div class="alert alert-danger" role="alert">
+      Somente aceitamos Pix. A chave do pix é 99999999999.
+    </div>
+   <br>
+   <br>
+   <br>
+   
+   <div class="container">
+   <div class="row"> 
+      <div class="card mb-12">
+      <h5 class="card-header">Camisa Branca Manhwa.com</h5>
+      <div class="card-body">
+         <img class="img-thumbnail" src="assets/images/camisabranca.png" alt="Camisa Branca">
+        <h5 class="card-title">R$10,00</h5>
+        <p class="card-text">Tamnhos P, M, G disponíveis.</p>
+        <a href="#compraum" class="btn btn-primary" data-toggle="modal">Comprar</a>
+      </div>
+    </div>
+    <div class="card mb-12">
+      <h5 class="card-header">Camisa Preta Manhwa.com</h5>
+      <div class="card-body">
+         <img class="img-thumbnail" src="assets/images/camisapreta.png" alt="Camisa Preta">
+        <h5 class="card-title">R$10,00</h5>
+        <p class="card-text">Tamanhos P, M, G disponíveis.</p>
+        <a href="#compradois" class="btn btn-primary" data-toggle="modal">Comprar</a>
+      </div>
+    </div>
+    </div>
+   </div>
+   <div class="container">
+      <div class="row"> 
+         <div class="card mb-12">
+         <h5 class="card-header">Boné</h5>
+         <div class="card-body">
+            <img class="img-thumbnail" src="assets/images/bone.png" alt="Bone">
+           <h5 class="card-title">R$20,00</h5>
+           <p class="card-text">Boné com contorno de cabeça entre 53 e 60 cm.</p>
+           <a href="#compratres" class="btn btn-primary" data-toggle="modal">Comprar</a>
+         </div>
+       </div>
+       <div class="card mb-12">
+         <h5 class="card-header">Caderno</h5>
+         <div class="card-body">
+            <img class="img-thumbnail" src="assets/images/caderno.png" alt="Caderno">
+           <h5 class="card-title">R$30,00</h5>
+           <p class="card-text">Caderno com 100 folhas.</p>
+           <a href="#compraquatro" class="btn btn-primary" data-toggle="modal">Comprar</a>
+         </div>
+       </div>
+       <div class="card mb-12">
+         <h5 class="card-header">Lápis</h5>
+         <div class="card-body">
+            <img class="img-thumbnail" src="assets/images/lapis.png" alt="Lapis">
+           <h5 class="card-title">R$5,00</h5>
+           <p class="card-text">Lápis de escrever Nº 2B</p>
+           <a href="#compracinco" class="btn btn-primary" data-toggle="modal">Comprar</a>
+         </div>
+       </div>
+       </div>
+      </div>
+  
+      <div class="modal fade" id="compraum">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <span class="modal-title">Compra Camisa Branca</span>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form action="">
+                     <fieldset class="form-group">
+                        <legend class="font-weight-bold">Informações Pessoais</legend>
+   
+                        <div class="form-group row">
+                           <label for="nome" class="col-form-label col-lg-2">Nome Completo</label>
+                           <div class="col-lg-10">
+                              <input type="text" name="nome"
+                                     class="form-control is-valid" 
+                                     placeholder="Nome" id="nome" >
+                           </div>
+                        </div>
+                        <div class="form-group row">
+                           <label for="endereco" class="col-form-label col-lg-2">Endereço</label>
+                           <div class="col-lg-10">
+                              <input type="text" id="endereco" name="endereco"
+                                     class="form-control is-invalid" placeholder="Endereço">
+                              <div class="invalid-feedback">
+                                 Este campo deve ser informado.
+                              </div>       
+                           </div>
+                        </div>
+                     </fieldset>
+                     <fieldset class="form-group" style="margin-bottom: 0px;">
+                        <div class="custom-file">
+                           <input type="file" class="custom-file-input" id="inputGroupFile01">
+                           <label class="custom-file-label" for="inputGroupFile01">Importar comprovante.</label>
+                         </div>
+                     </fieldset>
+                     <fieldset class="form-group" style="margin-bottom: 0px;">
+                     <div class="form-group row">
+                        <label for="senha" class="col-form-label col-lg-2 text-left text-lg-right">Tamanho da camisa</label>
+                        <div class="col-lg-10">
+                           <div class="form-check">
+                              <input type="checkbox" class="form-check-input" 
+                                     name="ilha" id="p">
+                              <label class="form-check-label" for="p">
+                                 P
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input type="checkbox" class="form-check-input"
+                                     name="paraty" id="m">
+                              <label class="form-check-label" for="m">
+                               M
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input type="checkbox"  class="form-check-input"
+                                     name="buzios" id="g">
+                              <label class="form-check-label" for="g">
+                                 G
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     </fieldset>
+                     <div class="form-group row">
+                        <div class=" col-lg-10 offset-lg-2">
+                           <button type="button" class="btn btn-primary" data-dismiss="modal">
+                              Enviar
+                           </button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   
+      <div class="modal fade" id="compradois">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <span class="modal-title">Compra Camisa Preta</span>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form action="">
+                     <fieldset class="form-group">
+                        <legend class="font-weight-bold">Informações Pessoais</legend>
+   
+                        <div class="form-group row">
+                           <label for="nome" class="col-form-label col-lg-2">Nome Completo</label>
+                           <div class="col-lg-10">
+                              <input type="text" name="nome"
+                                     class="form-control is-valid" 
+                                     placeholder="Nome" id="nome" >
+                           </div>
+                        </div>
+                        <div class="form-group row">
+                           <label for="endereco" class="col-form-label col-lg-2">Tamanho da camisa</label>
+                           <div class="col-lg-10">
+                              <input type="text" id="endereco" name="endereco"
+                                     class="form-control is-invalid" placeholder="Endereço">
+                              <div class="invalid-feedback">
+                                 Este campo deve ser informado.
+                              </div>       
+                           </div>
+                        </div>
+                     </fieldset>
+                     <fieldset class="form-group" style="margin-bottom: 0px;">
+                        <div class="custom-file">
+                           <input type="file" class="custom-file-input" id="inputGroupFile01">
+                           <label class="custom-file-label" for="inputGroupFile01">Importar comprovante.</label>
+                         </div>
+                     </fieldset>
+                     <fieldset class="form-group" style="margin-bottom: 0px;">
+                     <div class="form-group row">
+                        <label for="senha" class="col-form-label col-lg-2 text-left text-lg-right">Tamanho da Camisa</label>
+                        <div class="col-lg-10">
+                           <div class="form-check">
+                              <input type="checkbox" class="form-check-input" 
+                                     name="ilha" id="p">
+                              <label class="form-check-label" for="p">
+                                 P
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input type="checkbox" class="form-check-input"
+                                     name="paraty" id="m">
+                              <label class="form-check-label" for="m">
+                               M
+                              </label>
+                           </div>
+                           <div class="form-check">
+                              <input type="checkbox"  class="form-check-input"
+                                     name="buzios" id="g">
+                              <label class="form-check-label" for="g">
+                                 G
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     </fieldset>
+                     <div class="form-group row">
+                        <div class=" col-lg-10 offset-lg-2">
+                           <button type="button" class="btn btn-primary" data-dismiss="modal">
+                              Enviar
+                           </button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <div class="modal fade" id="compratres">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <span class="modal-title">Compra Boné</span>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form action="">
+                     <fieldset class="form-group">
+                        <legend class="font-weight-bold">Informações Pessoais</legend>
+   
+                        <div class="form-group row">
+                           <label for="nome" class="col-form-label col-lg-2">Nome Completo</label>
+                           <div class="col-lg-10">
+                              <input type="text" name="nome"
+                                     class="form-control is-valid" 
+                                     placeholder="Nome" id="nome" >
+                           </div>
+                        </div>
+                        <div class="form-group row">
+                           <label for="endereco" class="col-form-label col-lg-2">Endereço</label>
+                           <div class="col-lg-10">
+                              <input type="text" id="endereco" name="endereco"
+                                     class="form-control is-invalid" placeholder="Endereço">
+                              <div class="invalid-feedback">
+                                 Este campo deve ser informado.
+                              </div>       
+                           </div>
+                        </div>
+                     </fieldset>
+                     <fieldset class="form-group" style="margin-bottom: 0px;">
+                        <div class="custom-file">
+                           <input type="file" class="custom-file-input" id="inputGroupFile01">
+                           <label class="custom-file-label" for="inputGroupFile01">Importar comprovante.</label>
+                         </div>
+                     </fieldset>
+                     <fieldset class="form-group" style="margin-bottom: 0px;">
+                     <legend class="font-weight-bold">Tamanho do Boné(cm)</legend>
+                  <div class="form-group row">
+                     <label for="passeio" class="col-form-label col-lg-2 text-left text-lg-right">Estado</label>
+                     <div class="col-lg-10">
+                        <select class="form-control" id="passeio" multiple>
+                           <option value="">-- Selecione um passeio --</option>
+                           <option value="">53</option>
+                           <option value="">54</option>
+                           <option value="">55</option>
+                           <option value="">56</option>
+                           <option value="">57</option>
+                           <option value="">58</option>
+                           <option value="">59</option>
+                           <option value="">60</option>
+                        </select>
+                     </div>
+                     </fieldset>
+                     <div class="form-group row">
+                        <div class=" col-lg-10 offset-lg-2">
+                           <button type="button" class="btn btn-primary" data-dismiss="modal">
+                              Enviar
+                           </button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="modal fade" id="compraquatro">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <span class="modal-title">Compra Caderno</span>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form action="">
+                     <fieldset class="form-group">
+                        <legend class="font-weight-bold">Informações Pessoais</legend>
+   
+                        <div class="form-group row">
+                           <label for="nome" class="col-form-label col-lg-2">Nome Completo</label>
+                           <div class="col-lg-10">
+                              <input type="text" name="nome"
+                                     class="form-control is-valid" 
+                                     placeholder="Nome" id="nome" >
+                           </div>
+                        </div>
+                        <div class="form-group row">
+                           <label for="endereco" class="col-form-label col-lg-2">Endereço</label>
+                           <div class="col-lg-10">
+                              <input type="text" id="endereco" name="endereco"
+                                     class="form-control is-invalid" placeholder="Endereço">
+                              <div class="invalid-feedback">
+                                 Este campo deve ser informado.
+                              </div>       
+                           </div>
+                        </div>
+                     </fieldset>
+
+                     <fieldset class="form-group" style="margin-bottom: 0px;">
+                        <div class="custom-file">
+                           <input type="file" class="custom-file-input" id="inputGroupFile01">
+                           <label class="custom-file-label" for="inputGroupFile01">Importar comprovante.</label>
+                         </div>
+                     </fieldset>
+
+                     <div class="form-group row">
+                        <div class=" col-lg-10 offset-lg-2">
+                           <button type="button" class="btn btn-primary" data-dismiss="modal">
+                              Enviar
+                           </button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade" id="compracinco">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <span class="modal-title">Compra Lápis</span>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form action="">
+                     <fieldset class="form-group">
+                        <legend class="font-weight-bold">Informações Pessoais</legend>
+   
+                        <div class="form-group row">
+                           <label for="nome" class="col-form-label col-lg-2">Nome Completo</label>
+                           <div class="col-lg-10">
+                              <input type="text" name="nome"
+                                     class="form-control is-valid" 
+                                     placeholder="Nome" id="nome" >
+                           </div>
+                        </div>
+                        <div class="form-group row">
+                           <label for="endereco" class="col-form-label col-lg-2">Endereço</label>
+                           <div class="col-lg-10">
+                              <input type="text" id="endereco" name="endereco"
+                                     class="form-control is-invalid" placeholder="Endereço">
+                              <div class="invalid-feedback">
+                                 Este campo deve ser informado.
+                              </div>       
+                           </div>
+                        </div>
+                     </fieldset>
+                     
+                     <fieldset class="form-group" style="margin-bottom: 0px;">
+                        <div class="custom-file">
+                           <input type="file" class="custom-file-input" id="inputGroupFile01">
+                           <label class="custom-file-label" for="inputGroupFile01">Importar comprovante.</label>
+                         </div>
+                     </fieldset>
+
+                     <div class="form-group row">
+                        <div class=" col-lg-10 offset-lg-2">
+                           <button type="button" class="btn btn-primary" data-dismiss="modal">
+                              Enviar
+                           </button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   <script src="assets/js/jquery-3.3.1.js"></script>
+   <script src="assets/js/popper.js"></script>
+   <script src="assets/js/bootstrap.js"></script>
+   <script src="assets/js/script.js"></script>
+</body>
+
+</html>
